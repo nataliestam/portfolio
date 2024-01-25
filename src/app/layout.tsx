@@ -9,8 +9,8 @@ const cantarell = Cantarell({ weight: "400", subsets: ["latin"] });
 const dawningOfANewDay = Dawning_of_a_New_Day({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Natalie Stam",
-  description: "Natalie Stam's Engineering Portfolio",
+  title: "natalie stam",
+  description: "natalie stam's portfolio",
   themeColor: '#E8EDDF',
 };
 
