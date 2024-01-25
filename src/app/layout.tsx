@@ -10,7 +10,7 @@ const dawningOfANewDay = Dawning_of_a_New_Day({ weight: "400", subsets: ["latin"
 export const metadata: Metadata = {
   title: "natalie stam",
   description: "natalie stam's portfolio",
-  themeColor: '#E8EDDF',
+  themeColor: "#E8EDDF",
 };
 
 const ContactIcons = () => (
