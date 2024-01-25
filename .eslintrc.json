@@ -32,20 +32,14 @@
 		"react"
 	],
 	"rules": {
-		"linebreak-style": [
-			"error",
-			"unix"
-		],
 		"quotes": [
 			"error",
-			"single"
+			"double"
 		],
 		"semi": [
 			"error",
 			"always"
 		],
-		"sort-imports": [
-			"error"
-		]
+		"sort-imports": "error",
 	}
 }

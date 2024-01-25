@@ -1,21 +1,25 @@
-import './globals.css';
-import { Cantarell, Dawning_of_a_New_Day } from 'next/font/google';
-import { FaGithub, FaLinkedin } from 'react-icons/fa6';
-import Link from 'next/link';
-import type { Metadata } from 'next';
+import "./globals.css";
+import { Cantarell, Dawning_of_a_New_Day } from "next/font/google";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import Link from "next/link";
+import type { Metadata } from "next";
 
-const cantarell = Cantarell({ weight: '400', subsets: ['latin'] });
-const dawningOfANewDay = Dawning_of_a_New_Day({ weight: '400', subsets: ['latin'] });
+const cantarell = Cantarell({ weight: "400", subsets: ["latin"] });
+const dawningOfANewDay = Dawning_of_a_New_Day({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Natalie Stam',
-  description: 'Natalie Stam\'s Engineering Portfolio',
+  title: "Natalie Stam",
+  description: "Natalie Stam's Engineering Portfolio",
 };
 
 const ContactIcons = () => (
   <>
-    <Link target="_blank" href="https://github.com/nataliestam"><FaGithub /></Link>
-    <Link target="_blank" href="https://www.linkedin.com/in/nataliestam/"><FaLinkedin /></Link>
+    <Link target="_blank" href="https://github.com/nataliestam">
+      <FaGithub />
+    </Link>
+    <Link target="_blank" href="https://www.linkedin.com/in/nataliestam/">
+      <FaLinkedin />
+    </Link>
   </>
 );
 
@@ -29,7 +33,9 @@ export default function RootLayout({
       <body className={`${cantarell.className} flex items-center h-full bg-off-white text-dark-green`}>
         <nav className='fixed flex flex-col justify-between  w-64 h-full transition-transform -translate-x-full sm:translate-x-0 p-8 bg-dark-green text-off-white'>
           <div className='flex flex-col gap-4'>
-            <Link href="#about"><h1 className={`${dawningOfANewDay.className} text-4xl`}>natalie stam</h1></Link>
+            <Link href="#about">
+              <h1 className={`${dawningOfANewDay.className} text-4xl`}>natalie stam</h1>
+            </Link>
             <Link href="#about">about me</Link>
             <Link href="#resume">resume</Link>
             <Link href="#contact">contact</Link>
@@ -39,8 +45,12 @@ export default function RootLayout({
           </footer>
         </nav>
         <main className='h-full w-full sm:ml-64'>
-          <nav className='flex sm:hidden justify-end fixed top-0 right-0 gap-2 p-4'><ContactIcons /></nav>
-          <div className='px-16'>{children}</div>
+          <nav className='flex sm:hidden justify-end fixed top-0 right-0 gap-2 p-4'>
+            <ContactIcons />
+          </nav>
+          <div className='px-16'>
+            {children}
+          </div>
         </main>
       </body>
     </html>
