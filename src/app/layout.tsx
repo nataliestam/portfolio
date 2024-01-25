@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 
 const ContactIcons = () => (
   <>
-    <Link target="_blank" href="https://github.com/nataliestam">
+    <Link target="_blank" href="https://github.com/nataliestam" aria-label="natalie's github">
       <FaGithub />
     </Link>
-    <Link target="_blank" href="https://www.linkedin.com/in/nataliestam/">
+    <Link target="_blank" href="https://www.linkedin.com/in/nataliestam/" aria-label="natalie's linkedin">
       <FaLinkedin />
     </Link>
   </>
