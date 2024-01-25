@@ -3,6 +3,7 @@ import { Cantarell, Dawning_of_a_New_Day } from "next/font/google";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { Viewport } from "next/dist/lib/metadata/types/extra-types";
 
 const cantarell = Cantarell({ weight: "400", subsets: ["latin"] });
 const dawningOfANewDay = Dawning_of_a_New_Day({ weight: "400", subsets: ["latin"] });
@@ -10,6 +11,7 @@ const dawningOfANewDay = Dawning_of_a_New_Day({ weight: "400", subsets: ["latin"
 export const metadata: Metadata = {
   title: "Natalie Stam",
   description: "Natalie Stam's Engineering Portfolio",
+  themeColor: '#E8EDDF',
 };
 
 const ContactIcons = () => (
