@@ -23,7 +23,7 @@ const Page = () => (
     </Section>
     <Section id="resume" header="resume">
       <p>
-        currently, i&apos;m a senior software engineer at{" "}
+        currently, i&apos;m a staff software engineer at{" "}
         <Link
           href="https://stytch.com/"
           target="_blank"
@@ -31,7 +31,7 @@ const Page = () => (
         >
           Stytch
         </Link>
-        , where i own{" "}
+        , where i am the technical lead for all of our frontend surfaces, including{" "}
         <Link
           href="https://stytch.com/"
           target="_blank"
@@ -47,7 +47,7 @@ const Page = () => (
         >
           Stytch docs
         </Link>
-        , and the developer dashboard.
+        , the developer dashboard, and our frontend SDKs.
       </p>
       <p>
         previously, i was a senior frontend engineer at{" "}
